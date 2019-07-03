@@ -1,0 +1,19 @@
+group 'ru.rem.training.gradle'
+version '1.0-SNAPSHOT'
+
+subprojects {
+    apply plugin: "java"
+
+    tasks.withType(JavaCompile) {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+wrapper {
+    gradleVersion = "5.4.1"
+}
