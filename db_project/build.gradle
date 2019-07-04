@@ -1,0 +1,3 @@
+dependencies {
+    compile 'org.jooq:jooq:3.10.8'
+}
