@@ -12,3 +12,5 @@ run only one project
 gradlew main_project:run
 ```
 
+### [dependency graph plugin](https://github.com/vanniktech/gradle-dependency-graph-generator-plugin)
+
