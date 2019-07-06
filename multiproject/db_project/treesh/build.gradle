@@ -1,0 +1,17 @@
+apply plugin: "java"
+
+dependencies {
+    implementation 'org.jooq:jooq:3.10.8'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/db/java'
+        }
+    }
+}
+
+compileJava {
+    mustRunAfter 'db_project:generateSampleJooqSchemaSource'
+}

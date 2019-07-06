@@ -2,4 +2,4 @@ rootProject.name = 'ru.rem.training.gradle.multiproject'
 
 include 'main_project'
 include 'library_project'
-include 'db_project'
+include 'db_project:treesh'

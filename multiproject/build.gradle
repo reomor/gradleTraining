@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'nu.studer:gradle-jooq-plugin:2.0.11'
+        classpath "nu.studer:gradle-jooq-plugin:2.0.11"
         classpath "com.vanniktech:gradle-dependency-graph-generator-plugin:0.5.0"
     }
 }
@@ -55,8 +55,9 @@ jooq {
         }
         generator {
             // Older jOOQ versions had a package name conflict between the jooq and jooq-meta / jooq-codegen artefacts,
-            // which all reused the org.jooq.util package. This was OK in older versions of Java, up to Java 8.   
+            // which all reused the org.jooq.util package. This was OK in older versions of Java, up to Java 8.
             // https://stackoverflow.com/questions/50793357/java-lang-classnotfoundexception-org-jooq-util-javagenerator
+            // https://www.jooq.org/doc/3.10/manual/code-generation/codegen-configuration/
             name = 'org.jooq.util.DefaultGenerator'
             strategy {
                 name = 'org.jooq.util.DefaultGeneratorStrategy'
@@ -86,7 +87,7 @@ jooq {
             }
             target {
                 packageName = 'ru.rem.db'
-                directory = 'db_project/src/generated/java'
+                directory = 'db_project/treesh/src/db/java'
             }
         }
     }
