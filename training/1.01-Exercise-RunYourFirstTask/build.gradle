@@ -1,0 +1,9 @@
+task hello {
+    description "Hey student! Run this one :D"
+    group "Our demo"
+    println "Executes always whatever task is chosen"
+    doLast {
+        println "Executes only when hello task is run"
+        println "Hello, Rem!"
+    }
+}
