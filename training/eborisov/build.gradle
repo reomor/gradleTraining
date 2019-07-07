@@ -1,5 +1,16 @@
 apply plugin: "java"
 
+task runTest(type: JavaExec, dependsOn: test) {
+    main = "train.IntegrationTest"
+    classpath sourceSets.test.runtimeClasspath
+}
+
+check.dependsOn.add(runTest)
+
+test {
+    testLogging.showStandardStreams = true
+}
+
 repositories {
     mavenCentral()
 }
