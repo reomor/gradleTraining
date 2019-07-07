@@ -5,6 +5,16 @@ task runTest(type: JavaExec, dependsOn: test) {
     classpath sourceSets.test.runtimeClasspath
 }
 
+task printProp {
+    doLast {
+        println(x)
+    }
+}
+
+task sendMail(type: plgn.MyMailTask) {
+    to = "mail@mail.ru"
+}
+
 check.dependsOn.add(runTest)
 
 test {
