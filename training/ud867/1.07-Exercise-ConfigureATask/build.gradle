@@ -1,0 +1,7 @@
+task hello {
+    group "My outstanding tasks"
+    description "My hello task"
+    doLast {
+        println "Do actions in $description"
+    }
+}
