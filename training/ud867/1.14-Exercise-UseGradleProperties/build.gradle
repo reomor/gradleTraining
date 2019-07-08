@@ -1,0 +1,10 @@
+ext {
+    webOutputDir = "myBuildExt"
+}
+
+task bundleWeb(type: Zip) {
+    baseName = 'web'
+    destinationDir = file(webOutputDir)
+
+    from 'src/web'
+}
