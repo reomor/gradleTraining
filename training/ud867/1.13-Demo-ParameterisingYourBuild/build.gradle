@@ -1,0 +1,14 @@
+/*
+gradle -Pgreeting="Hello from the command line (cmd)" pG
+ */
+task printGreeting {
+    doLast {
+       println greeting
+       println greeting2
+       println greeting3
+    }
+}
+
+ext {
+    greeting3 = "Hello from inside the build script (ext)"
+}

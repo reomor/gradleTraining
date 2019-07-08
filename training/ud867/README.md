@@ -9,6 +9,7 @@ gradle(w) tasks - show all tasks
 gradle(w) run -m - "dry run" show all tasks to do without actual run 
 gradle(w) run -q - only output 
 gradle(w) tasks --all - all tasks
+gradle -PpropName="Hello from the command line" taskName
 ```
 
 ### Notes
