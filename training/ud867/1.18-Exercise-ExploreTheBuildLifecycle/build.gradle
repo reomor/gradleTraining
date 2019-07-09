@@ -1,0 +1,35 @@
+/*
+
+> Configure project :
+First top level script element
+First task: Configuration
+Second task: Configuration
+Second top level script element
+
+> Task :first
+First task: Action
+
+> Task :second
+Second task: Action
+
+*/
+
+println 'First top level script element'
+
+task first {
+    println 'First task: Configuration'
+
+    doLast {
+        println 'First task: Action'
+    }
+}
+
+task second(dependsOn: first) {
+    println 'Second task: Configuration'
+
+    doLast {
+        println 'Second task: Action'
+    }
+}
+
+println 'Second top level script element'
