@@ -1,0 +1,16 @@
+task hello(type: HelloTask)
+
+class HelloTask extends DefaultTask {
+    @TaskAction
+    void doAction() {
+        logger.info("info-level before")
+        logger.lifecycle 'Hello World'
+        logger.info("info-level after")
+    }
+}
+
+task derpy {
+    primp "Herp de derp"
+}
+
+logger.debug("Catch me if you can")
