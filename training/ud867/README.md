@@ -11,9 +11,10 @@ gradle(w) tasks - show all tasks
 gradle(w) run -m - "dry run" show all tasks to do without actual run 
 gradle(w) run -q - only output 
 gradle(w) tasks --all - all tasks
-gradle -PpropName="Hello from the command line" taskName
-gradle --stacktrace (== -s)
-gradle --full-stacktrace (== -S)
+gradle -PpropName="Hello from the command line" taskName - pass property via command line
+gradle --stacktrace (== -s) - short stacktrace
+gradle --full-stacktrace (== -S) - full stacktrace
+gradle --refresh-dependencies printDependencies - refresh dependencies from repository
 ```
 
 ### Notes
