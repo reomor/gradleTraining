@@ -1,15 +1,21 @@
-dependencies {
-    compile 'com.google.guava:guava:18.0'
+apply plugin: 'java'
+
+repositories {
+    jcenter()
 }
 
 dependencies {
-    compile group: 'com.google.guava', name: 'guava', version: '18.0'
+    implementation 'com.google.guava:guava:18.0'
 }
 
 dependencies {
-    compile files('libs/foo.jar', 'libs/bar.jar')
+    implementation group: 'com.google.guava', name: 'guava', version: '18.0'
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
+    implementation files('libs/foo.jar', 'libs/bar.jar')
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: '*.jar')
 }
