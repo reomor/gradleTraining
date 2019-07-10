@@ -1,6 +1,8 @@
 # gradleTraining ud867
 
-[Udacity gradle course]( https://classroom.udacity.com/courses/ud867)
+- [Udacity gradle course]( https://classroom.udacity.com/courses/ud867)
+- https://docs.gradle.org/current/userguide/building_java_projects.html
+- https://docs.gradle.org/current/userguide/java_plugin.html
 
 ### Useful commands
 

@@ -1,0 +1,17 @@
+apply plugin: "java"
+
+sourceSets {
+    main {
+        java {
+            //srcDirs'java'
+            // or
+            srcDirs = ['java', 'src/main/java']
+        }
+    }
+}
+
+jar {
+    manifest {
+        attributes "Implementation-Version" : "1.0"
+    }
+}
