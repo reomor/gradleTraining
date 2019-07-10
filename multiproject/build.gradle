@@ -27,6 +27,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.jooq:jooq:3.10.8'
     jooqRuntime 'postgresql:postgresql:9.1-901.jdbc4'
 }
 
