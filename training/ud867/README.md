@@ -15,6 +15,9 @@ gradle -PpropName="Hello from the command line" taskName - pass property via com
 gradle --stacktrace (== -s) - short stacktrace
 gradle --full-stacktrace (== -S) - full stacktrace
 gradle --refresh-dependencies printDependencies - refresh dependencies from repository
+gradle dependencies - project dependencies
+gradle dependencies --configuration runtimeOnly - project dependencies with specified configuration
+gradle dependencyInsight --dependency commons-logging - certain dependency insight (mb conflicts) 
 ```
 
 ### Notes
