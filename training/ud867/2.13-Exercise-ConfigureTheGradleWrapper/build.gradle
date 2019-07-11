@@ -1,0 +1,6 @@
+// http://gradle.org/gradle-nightly-build/
+// ./gradlew wrapper --gradle-version=5.6-20190711105409+0000
+
+wrapper {
+    gradleVersion = '2.14.1'
+}
